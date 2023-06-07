@@ -1,0 +1,21 @@
+double std_loop_4th_order_deriv_xx(const int gs, const int nxyz, double * restrict fin, double * restrict fout);
+double rev_loop_4th_order_deriv_xx(const int gs, const int nxyz, double * restrict fin, double * restrict fout);
+double std_loop_4th_order_deriv_yy(const int gs, const int nxyz, double * restrict fin, double * restrict fout);
+double rev_loop_4th_order_deriv_yy(const int gs, const int nxyz, double * restrict fin, double * restrict fout);
+double std_loop_4th_order_deriv_zz(const int gs, const int nxyz, double * restrict fin, double * restrict fout);
+double rev_loop_4th_order_deriv_zz(const int gs, const int nxyz, double * restrict fin, double * restrict fout);
+double std_loop_8th_order_deriv_xx(const int gs, const int nxyz, double * restrict fin, double * restrict fout);
+double rev_loop_8th_order_deriv_xx(const int gs, const int nxyz, double * restrict fin, double * restrict fout);
+double std_loop_8th_order_deriv_yy(const int gs, const int nxyz, double * restrict fin, double * restrict fout);
+double rev_loop_8th_order_deriv_yy(const int gs, const int nxyz, double * restrict fin, double * restrict fout);
+double std_loop_8th_order_deriv_zz(const int gs, const int nxyz, double * restrict fin, double * restrict fout);
+double rev_loop_8th_order_deriv_zz(const int gs, const int nxyz, double * restrict fin, double * restrict fout);
+double std_loop_8th_order_deriv_xy(const int gs, const int nxyz, double * restrict fin, double * restrict fout);
+double rev_loop_8th_order_deriv_xy(const int gs, const int nxyz, double * restrict fin, double * restrict fout);
+double std_loop_8th_order_deriv_xz(const int gs, const int nxyz, double * restrict fin, double * restrict fout);
+double rev_loop_8th_order_deriv_xz(const int gs, const int nxyz, double * restrict fin, double * restrict fout);
+double std_loop_8th_order_deriv_yz(const int gs, const int nxyz, double * restrict fin, double * restrict fout);
+double rev_loop_8th_order_deriv_yz(const int gs, const int nxyz, double * restrict fin, double * restrict fout);
+double get_time(void);
+void zero_out_arrays(const int nxyz, double * restrict fin, double * restrict fout);
+
