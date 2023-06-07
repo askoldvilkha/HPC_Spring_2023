@@ -40,8 +40,6 @@ double simpson(double *f_array, int n, double dx)
 
     double sum=0;
     sum=f_array[0]-f_array[n];
-    // YZ: If you split into two loops, you can remove all branches inside
-    // the loop
     for (int i=1; i<n; i=i+2)
     {
         sum=sum+4*f_array[i]+2*f_array[i+1];
@@ -54,16 +52,12 @@ double simpson(double *f_array, int n, double dx)
 int main(int argc, char **argv)
 {
     /*here we check if the input is valid and ask to enter correct value if it's not*/
-    // YZ: You used agv[1] before ensuring that it exists
     if (argc!=2)
     {
         printf("Number of arguments is not valid! Enter 1 positive and even number next time \n");
         exit(-1);
     }
     int n=atoi(argv[1]);
-    // YZ: while (n==n) looks strange. Since you "want" an infinite
-    // loop, use while (1). Also, I suggest just reporting an error
-    // and quiting if a user supplies an invalid inpu
     /*this "infinite loop" stops whenever user enters a valid input*/
     while (1)
     {
